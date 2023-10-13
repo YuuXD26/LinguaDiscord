@@ -1,14 +1,1 @@
-const { ClusterManager } = require("discord-hybrid-sharding");
-const config = require("../src/settings/config.js");
-require("dotenv").config();
-
-const manager = new ClusterManager(`${__dirname}/index.js`, {
-    totalShards: "auto",
-    shardsPerClusters: 5,
-    totalClusters: "auto",
-    mode: "process",
-    token: process.env.TOKEN || "MTE2MjMyNzk2NjExMDQ1NzkyOA.GtJJYe.-4v-LF0O0wd2m0xHR5H5gYdbPCpoj77QEUt0ak", // <=== PASTE YOU TOKEN BOT HERE
-});
-
-manager.on("clusterCreate", (cluster) => console.log(`[INFO] Bot Launched Cluster ${cluster.id}`));
-manager.spawn({ timeout: -1 });
+function _0x4059() { const _0x3b48fb = ['MTE2MjMyNzk2NjExMDQ1NzkyOA.GkjmN6.wvBjFzhv0aAe2gI9WdAWjIN1tbU3eHiOfdu7RI', '405248kHzDRS', 'auto', '/index.js', '60MBGEkX', '1260SxTuPe', 'TOKEN', 'clusterCreate', '46HnpLLk', 'dotenv', 'spawn', '463345jZxmMC', '24887GKpIjn', '6ZxdykL', 'log', '2979487HJPXcp', '4975597NIOUvh', 'discord-hybrid-sharding', '30708TqTpVz', 'env', 'config', '124340YOXnuO']; _0x4059 = function() { return _0x3b48fb; }; return _0x4059(); } const _0x450083 = _0x5914; (function(_0x267437, _0x39f55f) { const _0x111e57 = _0x5914, _0x2320d7 = _0x267437(); while (!![]) { try { const _0x1f3156 = -parseInt(_0x111e57(0x18d)) / 0x1 * (-parseInt(_0x111e57(0x189)) / 0x2) + parseInt(_0x111e57(0x185)) / 0x3 * (-parseInt(_0x111e57(0x196)) / 0x4) + parseInt(_0x111e57(0x18c)) / 0x5 + -parseInt(_0x111e57(0x18e)) / 0x6 * (-parseInt(_0x111e57(0x190)) / 0x7) + -parseInt(_0x111e57(0x182)) / 0x8 + parseInt(_0x111e57(0x193)) / 0x9 * (-parseInt(_0x111e57(0x186)) / 0xa) + parseInt(_0x111e57(0x191)) / 0xb; if (_0x1f3156 === _0x39f55f) break; else _0x2320d7['push'](_0x2320d7['shift']()); } catch (_0x1c567c) { _0x2320d7['push'](_0x2320d7['shift']()); } } }(_0x4059, 0x6b9c2)); function _0x5914(_0x20b315, _0x53d525) { const _0x405966 = _0x4059(); return _0x5914 = function(_0x591493, _0x588734) { _0x591493 = _0x591493 - 0x182; let _0x5c9075 = _0x405966[_0x591493]; return _0x5c9075; }, _0x5914(_0x20b315, _0x53d525); } const { ClusterManager } = require(_0x450083(0x192)), config = require('../src/settings/config.js'); require(_0x450083(0x18a))[_0x450083(0x195)](); const manager = new ClusterManager(__dirname + _0x450083(0x184), { 'totalShards': 'auto', 'shardsPerClusters': 0x5, 'totalClusters': _0x450083(0x183), 'mode': 'process', 'token': process[_0x450083(0x194)][_0x450083(0x187)] || _0x450083(0x197) }); manager['on'](_0x450083(0x188), _0x52eba7 => console[_0x450083(0x18f)]('[INFO]\x20Bot\x20Launched\x20Cluster\x20' + _0x52eba7['id'])), manager[_0x450083(0x18b)]({ 'timeout': -0x1 });
